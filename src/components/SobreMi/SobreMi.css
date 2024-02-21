@@ -1,0 +1,146 @@
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedorPadre {
+    border: 2px solid #404040;
+    border-radius: 10px;
+    background-color: #F7F1F1;
+    width: 100vh;
+    max-width: 600px;
+    min-width: 300px;
+    -webkit-box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
+    box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
+}
+
+.contenedorHijo {
+    border-bottom: 2px solid #404040;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colores {
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 8px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: #60e10e;
+}
+
+.css-button-shadow-border-sliding--grey {
+    
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #495057;
+    z-index: 1;
+}
+
+.css-button-shadow-border-sliding--grey:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.css-button-shadow-border-sliding--grey:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+    background-color: #6c757d;
+    right: 0;
+}
+
+.css-button-shadow-border-sliding--grey:active {
+    top: 2px;
+}
+
+.contenedorDescripcion {
+    text-align: center;
+    padding: 33px 20px;
+}
+/* compu 2 --------------------------------------------------- */
+
+.compuPadre{
+    background-color: #CACACA;
+    border: 5px solid white;
+    height: 50%;
+    min-width: 550px;
+    max-width: 600px;
+    min-height: 350px;
+    position: relative;
+}
+.compuHijo{
+    background: #404040;
+    border-bottom: 3px solid #E9E9E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.compuTitulo p{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.computadora{
+    width: 4vh;
+    margin: 5px 0px 5px 5px;
+}
+.exis{
+    padding: 1px 8px;
+    border: 1px solid #E9E9E9;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.redesSociales{
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    left: 4.5%;
+    top: 14%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.redesSociales img{
+    width: 10vh;
+    cursor: pointer;
+    
+}

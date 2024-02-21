@@ -1,0 +1,132 @@
+.heroSplit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.presentation h1 {
+    font-size: 4.3rem;
+}
+
+.presentation h1 span {
+    background: linear-gradient(98deg, rgba(199, 24, 11, 1) 0%, rgba(245, 33, 6, 1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(199, 24, 11);
+
+}
+
+.presentation p {
+    font-size: 1.7rem;
+    animation: initial;
+}
+
+.puntitos::after {
+    content: '...';
+    animation: point 3s infinite;
+}
+
+@keyframes point {
+    0% {
+        content: ' ';
+    }
+
+    33% {
+        content: '.';
+    }
+
+    66% {
+        content: '..';
+    }
+
+    100% {
+        content: '...';
+    }
+}
+
+.stack {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.stack p {
+    font-size: 1.1rem;
+}
+
+.linea {
+    padding: 2px;
+    height: 35px;
+    background-color: #6d6d6e;
+    margin-left: 10px;
+}
+
+.stackImg img {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    margin-left: 1.5rem;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.logoMio {
+    background-image: url('../../assets/img/yo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 25rem;
+    height: 25rem;
+    border: 3px solid black;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    position: relative;
+    animation: movimientoFoto 8s ease-in-out infinite;
+    -webkit-box-shadow: 15px 21px 15px 5px rgba(0,0,0,0.64);
+    -moz-box-shadow: 15px 21px 15px 5px rgba(0,0,0,0.64);
+    box-shadow: 15px 21px 15px 5px rgba(0,0,0,0.64);
+
+}
+
+@keyframes movimientoFoto {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.flecha{
+    position: absolute;
+    top: 88%;
+    width: 7rem;
+    animation: flechas 1.5s infinite;
+}
+
+@keyframes flechas {
+    0% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    25% {
+        opacity: 0.7;
+    }
+    35% {
+        opacity: 0.5;
+    }
+    65% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}

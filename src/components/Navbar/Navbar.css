@@ -1,0 +1,54 @@
+header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+nav a{
+    font-size: 19px;
+    margin: 0px 20px;
+}
+
+.buttonChange{
+    position: absolute;
+    top: 23px;
+    z-index: 1;
+}
+.darkMode {
+    display: flex;
+    border-radius: 100px;
+    border: none;
+    position: fixed;
+    z-index: 1;
+    right: 40px;
+    cursor: pointer;
+    background-color: #343d5b;
+}
+.darkMode span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+}
+.darkMode::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
