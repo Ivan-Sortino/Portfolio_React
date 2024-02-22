@@ -1,0 +1,8 @@
+export {default as logoHtml} from './img/HTML.svg'
+export {default as logoCss} from './img/CSS.svg'
+export {default as logoJs} from './img/JS.svg'
+export {default as logoReact} from './img/React.svg'
+export {default as Flecha} from './img/Flecha.svg'
+export {default as Linkedin} from './img/Linkedin.svg'
+export {default as Github} from './img/github.svg'
+export {default as Computadora} from './img/Computadora.png'
