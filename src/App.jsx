@@ -97,7 +97,7 @@ function App() {
           </div>
         </div>
       </section>
-      {/* Sobre Mi */}
+      {/* -------------------------------- Sobre Mi -------------------------------- */}
       <Proyectos />
       <Contacto />
       <Footer />
