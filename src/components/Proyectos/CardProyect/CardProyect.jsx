@@ -10,9 +10,7 @@ const CardProyect = ({ imagen, titulo, icono, descripcion, stack1, stack2, githu
 
             <div className='cardPadre'>
 
-                <div className='cardImage'>
-                    <img src={imagen} alt="" />
-                </div>
+                <div className={`${imagen} imagenGlobal `}></div>
                 <div className='cardText'>
                     <div className='cardIcono'>
                         <p className='cardTitulo'> {titulo}  </p>

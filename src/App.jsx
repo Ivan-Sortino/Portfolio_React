@@ -5,17 +5,10 @@ import './App.css'
 
 function App() {
 
-  const [darkMode, setdarkMode] = useState(false)
 
-  const handleDarckMode = () => {
-    setdarkMode(!darkMode)
-
-  }
-
-  console.log(darkMode)
   return (
-    <div className={`pagina ${darkMode ? 'dark' : ''}`}>
-      <Navbar handleDarckMode={handleDarckMode} />
+    <div >
+      <Navbar/>
       <Hero />
       <SobreMi />
       <Proyectos />

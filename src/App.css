@@ -32,6 +32,14 @@ h2 {
 h1,h2 {
     text-shadow: 0 0 2px black;
 }
+section[id]{
+    scroll-margin-top: 70px;
+}
+@media (width <= 360px){
+    section[id]{
+        scroll-margin-top: 40px;
+    }
+}
 
 
 

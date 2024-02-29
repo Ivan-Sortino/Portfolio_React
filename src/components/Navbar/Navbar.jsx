@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css";
 
-const Navbar = ({handleDarckMode}) => {
+const Navbar = () => {
 
     const [menuHamburguesa, setMenuHamburguesa] = useState(false)
 
@@ -14,18 +14,11 @@ const Navbar = ({handleDarckMode}) => {
         <header className={menuHamburguesa ? 'menuDesplegable' : 'header'}>
             <nav>
                 <a href="#"><i class="bi bi-house"></i>Home</a>
-                <a href="#"><i class="bi bi-person"></i>Sobre Mi</a>
-                <a href="#"><i class="bi bi-code-slash"></i>Proyectos</a>
-                <a href="#"><i class="bi bi-chat-left-dots"></i>Contacto</a>
+                <a href="#sobreMi"><i class="bi bi-person"></i>Sobre Mi</a>
+                <a href="#proyectos"><i class="bi bi-code-slash"></i>Proyectos</a>
+                <a href="#contacto"><i class="bi bi-chat-left-dots"></i>Contacto</a>
             </nav>
-
-            <div className='buttonChange'>
-                <button className='darkMode' onClick={handleDarckMode}>
-                    <span><i class="bi bi-sun-fill"></i></span>
-                    <span><i class="bi bi-moon-fill"></i></span>
-                </button>
-            </div>
-            
+ 
             <div className='containerMobile'>
                 {
                     menuHamburguesa ?

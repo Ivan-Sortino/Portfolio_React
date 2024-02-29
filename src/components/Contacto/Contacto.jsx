@@ -4,7 +4,7 @@ import { Mail, Mano } from '../../assets'
 
 const Contacto = () => {
     return (
-        <section className='contactContenedor'>
+        <section className='contactContenedor' id='contacto'>
             <div className='contact'>
                 <div className='contactText'>
                     <p>CONTACTO</p>

@@ -5,7 +5,7 @@ import './SobreMi.css'
 
 const SobreMi = () => {
     return (
-        <section className="containerPadre">
+        <section className="containerPadre" id='sobreMi'>
             <h2>Sobre Mi</h2>
             <div className='contenedor'>
 
