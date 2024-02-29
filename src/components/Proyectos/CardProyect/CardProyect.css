@@ -1,6 +1,7 @@
 .cardContenedor{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .cardPadre{
     background-color: white;
@@ -10,18 +11,36 @@
     justify-content: space-around;
     border-radius: 30px;
     gap: 10px;
+    border: 2px solid #404040;
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.78);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.78);
+box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.78);
 }
 
 .cardText{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .cardTitulo{
     font-size: 20px;
+    border-bottom: 2px solid #147efb;
+}
+.cardIcono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.cardIcono img{
+    width: 25px;
 }
 .cardDescripcion{
     color: gray;
     font-size: 14px;
     margin-top: 25px;
+    white-space: pre-line;
 }
 .cardStack{
     margin-top: 25px;
@@ -37,13 +56,33 @@
     gap: 50px;
     cursor: pointer;
 }
-
-
-
-
-
+.cardCodigo a{
+    transition: .3s;
+}
+.cardCodigo a:hover{
+    color: #147efb;
+}
 
 .cardImage img{
     width: 100%;
     height: 300px;
+    border-radius: 10px;
+    border: 1px solid #404040;
+}
+
+
+@media (width <= 767px){
+    .cardContenedor{
+        width: 90%;
+    }
+    .cardPadre{
+        flex-direction: column;
+    }
+    .cardDescripcion{
+        white-space: none;
+    }
+    .cardImage{
+        display: flex;
+        align-items: center;
+    }
 }

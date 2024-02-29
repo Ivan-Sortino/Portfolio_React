@@ -1,0 +1,198 @@
+.heroSplit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.presentation h1 {
+    font-size: 4.3rem;
+}
+
+.presentation h1 span {
+
+    color: #147efb;
+
+}
+
+.presentation p {
+    font-size: 1.7rem;
+    animation: initial;
+    text-shadow: 0 0 2px black;
+}
+
+.puntitos::after {
+    content: '...';
+    animation: point 3s infinite;
+}
+
+@keyframes point {
+    0% {
+        content: ' ';
+    }
+
+    33% {
+        content: '.';
+    }
+
+    66% {
+        content: '..';
+    }
+
+    100% {
+        content: '...';
+    }
+}
+
+.tech{
+    position: absolute;
+    margin-top: 80px;
+}
+.stack {
+    display: flex;
+    align-items: center;
+}
+
+.stack p {
+    font-size: 1.1rem;
+    text-shadow: 0 0 2px black;
+    border-right: 3px solid #6d6d6e;
+    padding-right: 10px;
+    font-size: 1.1rem;
+}
+
+
+.stackImg img {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    margin-left: 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+}
+
+.logoMio {
+    background-image: url('../../assets/img/yo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 25rem;
+    height: 25rem;
+    border: 3px solid black;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    position: relative;
+    animation: movimientoFoto 8s ease-in-out infinite;
+    -webkit-box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
+    box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
+
+}
+
+@keyframes movimientoFoto {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.flecha {
+    position: absolute;
+    top: 88%;
+    width: 7rem;
+    animation: flechas 1.5s infinite;
+}
+
+@keyframes flechas {
+    0% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+
+    25% {
+        opacity: 0.7;
+    }
+
+    35% {
+        opacity: 0.5;
+    }
+
+    65% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+@media (width <=767px) {
+    .heroSplit {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 50rem;
+    }
+
+    .logoMio {
+        width: 15rem;
+        height: 15rem;
+        margin-top: 0%;
+        margin-bottom: 2rem;
+    }
+
+    .presentation {
+        text-align: center;
+        margin: 0px 30px;
+    }
+    .presentation h1 {
+        font-size: 2.5rem;
+    }
+    .presentation p{
+        font-size: 1.5rem;
+    }
+    
+    .tech{
+        position: relative;
+    }
+    .stack {
+        flex-direction: column;
+    }
+    .stack p {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 10px;
+        border-right: 0px;
+        border-bottom: 3px solid #6d6d6e;
+        width: 40%;
+    }
+    .stackImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 20px;
+    }
+    .stackImg img{
+        margin-left: 0;
+        width: 40px;
+    }
+
+    .flecha {
+        display: none;
+    }
+}
+
+@media (width <= 360px){
+    .stackImg img{
+        width: 30px;
+        margin: 0px;
+    }
+}

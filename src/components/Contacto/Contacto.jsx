@@ -1,28 +1,28 @@
 import React from 'react'
+import './Contacto.css'
+import { Mail, Mano } from '../../assets'
 
 const Contacto = () => {
     return (
-        <section>
-            <h2>Contacto</h2>
-
-            <div>
-                <form action="">
-                    <label htmlFor="name">Nombre</label>
-                    <input type="text" />
-
-                    <label htmlFor="">Mail</label>
-                    <input type="email" />
-
-                    <label htmlFor="">Asunto</label>
-                    <input type="text" />
-
-                    <label htmlFor="">Mensaje</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                </form>
-
-                <button>Enviar</button>
+        <section className='contactContenedor'>
+            <div className='contact'>
+                <div className='contactText'>
+                    <p>CONTACTO</p>
+                    <div className='contactMano'>
+                        <h3>¿INTERESADO EN TRABAJAR JUNTOS?</h3>
+                        <img src={Mano} alt="" />
+                    </div>
+                </div>
+                <div className='contactMail'>
+                    <span><img src={Mail} alt="" /></span>
+                    <div className='mailText'>
+                        <p>Mail</p>
+                        <a>Ivansortino2003@gmail.com</a>
+                    </div>
+                    
+                </div>
             </div>
-        </section>
+        </section >
     )
 }
 

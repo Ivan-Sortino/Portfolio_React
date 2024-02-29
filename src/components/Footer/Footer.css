@@ -1,0 +1,20 @@
+.footerContenedor{
+    padding: 3rem 0;
+    background-color: #2d2e32;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerContenedor p{
+    color: white;
+}
+
+.footerImg img{
+    width: 3rem;
+}
+
+@media (width <= 360px){
+    .footerContenedor p{
+        font-size: 10px;
+    }
+}

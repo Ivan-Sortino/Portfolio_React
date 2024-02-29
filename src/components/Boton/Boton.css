@@ -1,5 +1,5 @@
 .css-button-shadow-border-sliding--grey {
-    
+    min-width: 130px;
     color: #fff;
     padding: 10px 10px;
     font-weight: bold;
@@ -36,4 +36,8 @@
 
 .css-button-shadow-border-sliding--grey:active {
     top: 2px;
+}
+
+.css-button-shadow-border-sliding--grey i{
+    font-size: 20px;
 }

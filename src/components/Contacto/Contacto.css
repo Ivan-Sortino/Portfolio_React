@@ -1,0 +1,93 @@
+.contactContenedor{
+    background-color: #ffff;
+    padding: 6rem 0;
+    display: flex;
+}
+
+.contact{
+    margin-left: 20rem ;
+}
+.contact h3{
+    color: #2d2e32;
+    font-size: 2rem;
+}
+
+.contactText p{
+    color: #147efb;
+    font-size: 1.3rem;
+}
+.contactText{
+    margin-bottom: 20px;
+}
+.contactMano{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contactMail{
+    display: flex;
+    gap: 10px;
+}
+.contactMail span{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+    color: #147efb;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+}
+.contactMail img{
+    width: 2rem;
+}
+
+.mailText p{
+    color: #147efb;
+}
+.mailText a{
+    color: #767676;
+    cursor: pointer;
+    transition: .5s;
+}
+.mailText a:hover{
+    color: #147efb;
+}
+
+
+@media (width <=1024px) {
+    .contact{
+        margin-left: 5rem;
+    }
+}
+
+@media (width <= 767px){
+    .contact{
+        margin-left: 20px;
+    }
+    .contactText p, .contactMano h3{
+        font-size: 1.2rem;
+    }
+    .mailText a{
+        font-size: 1rem;
+    }
+}
+
+@media (Width <= 360px){
+    .mailText a{
+        font-size: .8rem;
+    }
+    .contactMail span{
+        width: 2rem;
+        height: 2rem;
+        padding: 5px;
+    }
+    .mailText p{
+        font-size: 13px;
+    }
+    .contactMano img{
+        width: 40px;
+    }
+}
