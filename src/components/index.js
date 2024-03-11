@@ -5,6 +5,7 @@ import Boton from "./Boton/Boton"
 import Proyectos from "./Proyectos/Proyectos";
 import Contacto from "./Contacto/Contacto";
 import Footer from "./Footer/Footer"
+import BotonMail from "./BotonMail/BotonMail";
 
 
 export {
@@ -15,4 +16,5 @@ export {
     Proyectos,
     Contacto,
     Footer,
+    BotonMail,
 }

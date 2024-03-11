@@ -73,6 +73,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
 }
 
+
 .logoMio {
     background-image: url('../../assets/img/yo.jpg');
     background-size: cover;
@@ -86,7 +87,6 @@
     -webkit-box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
     -moz-box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
     box-shadow: 15px 21px 15px 5px rgba(0, 0, 0, 0.64);
-
 }
 
 @keyframes movimientoFoto {

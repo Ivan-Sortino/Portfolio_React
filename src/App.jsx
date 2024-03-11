@@ -1,4 +1,4 @@
-import { Navbar, Proyectos, Contacto, Footer, Hero, SobreMi } from "./components";
+import { Navbar, Proyectos, Contacto, Footer, Hero, SobreMi, BotonMail } from "./components";
 import { useState } from 'react'
 import './App.css'
 
@@ -14,6 +14,7 @@ function App() {
       <Proyectos />
       <Contacto />
       <Footer />
+      <BotonMail/>
     </div>
   )
 }

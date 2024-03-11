@@ -1,0 +1,25 @@
+.botonMail{
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #404040;
+    border: 1px solid #404040;
+    box-shadow: 0 0 10px #147efb;
+}
+
+@media (width <= 767px){
+    .botonMail{
+        padding: 15px;
+    }
+}
+
+@media (Width <= 360px){
+    .botonMail{
+        padding: 10px;
+    }
+}

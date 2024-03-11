@@ -22,7 +22,7 @@ const Contacto = () => {
                     
                 </div>
             </div>
-        </section >
+        </section > 
     )
 }
 

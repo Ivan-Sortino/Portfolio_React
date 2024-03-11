@@ -24,7 +24,7 @@ const SobreMi = () => {
                     <div className='contenedorDescripcion'>
                         <p>¡Hola! Mi nombre es Iván Sortino, tengo 20 años, soy de Argentina
                             como desarrollador Front-End poseo conocimiento de HTML, CSS,
-                            JavaScript. Me destaco en el diseño y mantenimiento de sitios webs
+                            JavaScript, React. Me destaco en el diseño y mantenimiento de sitios webs
                             que ofrecen una experiencia de usuario fluida y unica. Mi
                             experiencia radica en crear interfaces dinámicas y atractivas a
                             través de una escritura limpia y código optimizado utilizando
